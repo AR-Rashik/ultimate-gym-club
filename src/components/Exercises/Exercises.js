@@ -11,12 +11,15 @@ const Exercises = () => {
   }, [])
 
   return (
-    <div className='container mt-5 w-75'>
+    <div className='container m-5 w-75'>
       <h1 className='mb-3'>Ultimate Gym Club</h1>
       <h3 className='mb-5'>Select your todays exercise</h3>
       <div className='row row-cols-3'>
       {
-        exercises.map(exercise => <Exercise></Exercise>)
+        exercises.map(exercise => <Exercise
+          key={exercise.id}
+          exercise={exercise}
+        ></Exercise>)
       }
       </div>
     </div>
