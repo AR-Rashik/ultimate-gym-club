@@ -5,7 +5,7 @@ const Exercise = ({exercise}) => {
   const {id, picture, name, about, age, timeRequired} = exercise;
 
   return (
-    <div className="mt-3 col">
+    <div className="exercise mt-3 col">
       <div className="card">
         <div className='p-3'>
           <img src={picture} className="img-fluid rounded-1 card-img-top" alt="..." />

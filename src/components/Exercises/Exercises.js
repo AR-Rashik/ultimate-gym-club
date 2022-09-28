@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
+import './Exrcises.css';
 
 const Exercises = () => {
 
@@ -11,7 +12,7 @@ const Exercises = () => {
   }, [])
 
   return (
-    <div className='container m-5 w-75'>
+    <div className='exercises container p-5 w-75'>
       <h1 className='mb-3'>Ultimate Gym Club</h1>
       <h3 className='mb-5'>Select your todays exercise</h3>
       <div className='row row-cols-3'>
