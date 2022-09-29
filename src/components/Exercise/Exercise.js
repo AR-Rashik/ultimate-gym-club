@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Exercise = ({exercise}) => {
+const Exercise = ({exercise,handleAddToList}) => {
 
   const {id, picture, name, about, age, timeRequired} = exercise;
+
 
   return (
     <div className="exercise mt-3 col">
@@ -15,7 +16,7 @@ const Exercise = ({exercise}) => {
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p>For age: {age}</p>
           <p>Time required: {timeRequired}s</p>
-          <a href="/link" className="btn btn-primary w-100" >Go somewhere</a>
+          <button onClick={() => {handleAddToList(exercise)}} className="btn btn-primary w-100" >Go somewhere</button>
         </div>
       </div>
     </div>

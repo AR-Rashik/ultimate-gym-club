@@ -1,7 +1,15 @@
 import React from 'react';
 import profile from '../../profile.jpg';
 
-const Activity = () => {
+const Activity = ({list}) => {
+
+  console.log(list);
+
+  let totalSeconds = 0;
+  for(const exercise of list){
+    totalSeconds = totalSeconds + exercise.timeRequired;
+  }
+
   return (
     <div className='w-25 p-3 '>
       <div className='d-flex align-items-center '>
@@ -39,7 +47,7 @@ const Activity = () => {
           Exercise time
         </div>
         <div>
-          000 seconds
+          {totalSeconds} seconds
         </div>
       </div>
       <div className='mt-4 d-flex justify-content-between align-items-center bg-info rounded-2 p-3 mb-5'>
