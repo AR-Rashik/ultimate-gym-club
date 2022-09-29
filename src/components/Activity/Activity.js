@@ -3,6 +3,8 @@ import profile from '../../profile.jpg';
 import { addToDB, getFromDb } from '../../utilities/fakedb';
 import BreakTime from '../BreakTime/BreakTime';
 import './Activity.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Activity = ({list}) => {
 
@@ -30,7 +32,12 @@ const Activity = ({list}) => {
     }, [])
     
     
-    
+    const showToastMessage = () => {
+      toast.success('Successfully activity completed!', {
+          position: toast.POSITION.TOP_CENTER,
+          className: 'toast-message'
+      });
+  };
 
     // const getFromDB = () => {
     //   const newTime = localStorage.getItem('time');
@@ -100,7 +107,10 @@ const Activity = ({list}) => {
           {time} seconds
         </div>
       </div>
-      <button className='btn btn-primary w-100 p-3'>Activity Completed</button>
+      <div>
+      <button onClick={showToastMessage} className='btn btn-primary w-100 p-3'>Activity Completed</button>
+      <ToastContainer />
+      </div>
     </div>
   );
 };
