@@ -1,4 +1,8 @@
-.exercis {
-  background-color: #E3FDFD;
-  z-index: 1000000;
+.btn-color{
+  background-color: #FFD700;
+  color: #053F5E;
+}
+
+.text-color{
+  color: #022C43;
 }

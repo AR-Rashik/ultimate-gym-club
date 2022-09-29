@@ -5,6 +5,8 @@ import BreakTime from '../BreakTime/BreakTime';
 import './Activity.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const Activity = ({list}) => {
 
@@ -52,30 +54,30 @@ const Activity = ({list}) => {
   // }
 
   return (
-    <div className='w-25 p-3 '>
+    <div className='w-25 p-3 activity-container'>
       <div className='d-flex align-items-center '>
         <img src={profile} className="img-fluid w-25 rounded-circle" alt="" />
         <div className=' ms-3'>
-          <h5>Abdur Rahim</h5>
-          <small>Cumilla, Bangladesh</small>
+          <h5 className='fs-5'>Abdur Rahim</h5>
+          <small className='text-light'><span><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon></span> Cumilla, Bangladesh</small>
         </div>
       </div>
-      <div className='mt-4 d-flex justify-content-around align-items-center bg-info rounded-2 p-2 mb-4'>
+      <div className='mt-4 d-flex justify-content-around align-items-center box-container rounded-2 p-2 mb-4'>
         <div>
-          <div>75kg</div>
+          <div><span className='fw-bold fs-5'>70</span>kg</div>
           <div>Weight</div>
         </div>
         <div>
-          <div>6.5</div>
+          <div className='fw-bold fs-5'>6.5</div>
           <div>Height</div>
         </div>
         <div>
-          <div>25yrs</div>
+          <div><span className='fw-bold fs-5'>22</span>yrs</div>
           <div>Age</div>
         </div>
       </div>
-      <h3 className='pt-4'>Add a break</h3>
-      <div className='mt-3 d-flex justify-content-around align-items-center bg-info rounded-2 p-3 mb-5'>
+      <h4 className='pt-4'>Add a break</h4>
+      <div className='mt-2 d-flex justify-content-around align-items-center box-container rounded-2 p-3 mb-5'>
         {
           breakTimes.map(breakTime => <BreakTime 
             
@@ -84,31 +86,26 @@ const Activity = ({list}) => {
             key={breakTime}
             ></BreakTime>)
         }
-        {/* <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 10 </div>
-        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 20 </div>
-        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 30 </div>
-        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 40 </div>
-        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 50 </div> */}
       </div>
-      <h3 className='pt-4'>Exercise Details</h3>
-      <div className='mt-4 d-flex justify-content-between align-items-center bg-info rounded-2 p-3 mb-2'>
-        <div>
+      <h4 className='pt-4'>Exercise Details</h4>
+      <div className='mt-4 d-flex justify-content-between align-items-center box-container rounded-2 p-3 mb-2'>
+        <div className='fw-semibold'>
           Exercise time
         </div>
-        <div>
+        <div className='text-white'>
           {totalSeconds} seconds
         </div>
       </div>
-      <div className='mt-4 d-flex justify-content-between align-items-center bg-info rounded-2 p-3 mb-5'>
-        <div>
+      <div className='mt-4 d-flex justify-content-between align-items-center box-container rounded-2 p-3 mb-5'>
+        <div className='fw-semibold'>
           Break time
         </div>
-        <div>
+        <div className='text-white'>
           {time} seconds
         </div>
       </div>
       <div>
-      <button onClick={showToastMessage} className='btn btn-primary w-100 p-3'>Activity Completed</button>
+      <button onClick={showToastMessage} className='btn btn-color w-100 p-3 fw-semibold'>Activity Completed</button>
       <ToastContainer />
       </div>
     </div>

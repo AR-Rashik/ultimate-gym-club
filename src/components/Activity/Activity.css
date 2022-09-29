@@ -3,3 +3,16 @@
   width: 30vw;
   padding: 20px 20px;
 }
+
+.activity-container{
+  background-color: #053F5E;
+}
+
+.box-container{
+  background-color: #115173;
+}
+
+.btn-color{
+  background-color: #FFD700;
+  color: #053F5E;
+}

@@ -1,50 +1,50 @@
 [
   {
     "id": "6334ad561e0cc63eb1478964",
-    "picture": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg",
+    "picture": "https://images.pexels.com/photos/8454923/pexels-photo-8454923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "name": "Lunges",
-    "about": "Incididunt reprehenderit dolore irure laboris consequat ea. Pariatur ex velit tempor ullamco ad pariatur ut occaecat ea. Mollit laborum cupidatat anim cupidatat nulla incididunt nostrud labore commodo commodo labore sit esse. Commodo minim deserunt non ea culpa ad do irure velit minim minim velit. Exercitation labore velit minim magna culpa culpa veniam.\r\n",
-    "age": 28,
-    "timeRequired": 25
+    "about": "Challenging your balance is an essential part of a well-rounded exercise routine. Lunges do just that, promoting functional movement while also increasing strength in your legs and glutes.\r\n",
+    "age": "18-30",
+    "timeRequired": 45
   },
   {
     "id": "6334ad568bac484d473c8ad9",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://images.pexels.com/photos/4804032/pexels-photo-4804032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "name": "Pushups",
-    "about": "Laborum occaecat mollit eu sit dolore. Sint consectetur do sit nisi sint ut exercitation labore eiusmod laboris. Ipsum exercitation cupidatat esse nulla adipisicing ea excepteur nisi nostrud mollit laboris proident duis laboris. Ut irure consectetur duis in veniam ut nulla laboris ea adipisicing pariatur dolor irure.\r\n",
-    "age": 39,
-    "timeRequired": 40
+    "about": "Drop and give me 20! Pushups are one of the most basic yet effective bodyweight moves you can perform because of the number of muscles that are recruited to perform them.\r\n",
+    "age": "18-36",
+    "timeRequired": 60
   },
   {
     "id": "6334ad56114db0067db2c1e2",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://images.pexels.com/photos/371049/pexels-photo-371049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "name": "Squats",
-    "about": "Magna commodo commodo cillum ex voluptate ullamco. Consequat minim deserunt veniam aute sit do. Sit dolore culpa aute mollit adipisicing esse consectetur sit ex eu. Deserunt irure amet eiusmod Lorem enim aliqua nulla ut esse nisi elit. Irure amet cupidatat cupidatat eiusmod reprehenderit et culpa non. Enim velit aliquip eiusmod non exercitation adipisicing laboris labore ex consequat tempor.\r\n",
-    "age": 37,
-    "timeRequired": 59
+    "about": "Squats increase lower body and core strength, as well as flexibility in your lower back and hips. Because they engage some of the largest muscles in the body, they also pack a major punch in terms of calories burned.\r\n",
+    "age": "20-40",
+    "timeRequired": 30
   },
   {
     "id": "6334ad56b8a16da8b00d83af",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://images.pexels.com/photos/3838389/pexels-photo-3838389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "name": "Dumbbell rows",
-    "about": "Minim nisi labore magna voluptate enim. Quis officia culpa sunt ipsum fugiat minim fugiat anim nulla magna. Esse voluptate pariatur tempor enim culpa excepteur.\r\n",
-    "age": 27,
-    "timeRequired": 26
+    "about": "Not only will these make your back look killer in that dress, but dumbbell rows are also another compound exercise that strengthens multiple muscles in your upper body. Choose a moderate-weight dumbbell and ensure that you’re squeezing at the top of the movement.\r\n",
+    "age": "24-40",
+    "timeRequired": 120
   },
   {
     "id": "6334ad565332484df1f21193",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://images.pexels.com/photos/8436949/pexels-photo-8436949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "name": " Burpees",
-    "about": "Enim culpa proident excepteur laborum aliquip dolor tempor tempor ea officia aliquip incididunt. Anim esse cillum elit elit sit ad sunt nostrud. Esse aliqua irure reprehenderit reprehenderit duis culpa elit duis. Consectetur id ex pariatur ut minim do enim occaecat magna officia aute ea duis. Adipisicing ex minim ad et fugiat ullamco magna occaecat. Sint nulla sint irure consequat culpa in occaecat anim. Mollit ipsum elit nostrud enim et reprehenderit non esse id commodo consequat duis voluptate duis.\r\n",
-    "age": 20,
+    "about": "An exercise we love to hate, burpees are a super-effective, whole-body move that provides great bang for your buck for cardiovascular endurance and muscle strength.\r\n",
+    "age": "20-30",
     "timeRequired": 45
   },
   {
     "id": "6334ad5652ea1f7f11716a95",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "name": "Planks",
-    "about": "Enim magna amet Lorem adipisicing eu in ex nisi laboris qui cillum. Anim aliquip aute eu in. Aliqua et culpa aute elit. Proident quis quis id aliquip sunt do reprehenderit veniam id reprehenderit minim veniam anim. Et ea incididunt in ullamco non exercitation velit tempor. Ullamco laboris nostrud sint consequat duis sint nulla cupidatat cupidatat laboris aute. Esse sint in aute et.\r\n",
-    "age": 33,
-    "timeRequired": 55
+    "about": "Planks are an effective way to target both your abdominal muscles and your whole body. Planking stabilizes your core without straining your back the way situps or crunches might.\r\n",
+    "age": "16-38",
+    "timeRequired": 90
   }
 ]

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import Exercise from '../Exercise/Exercise';
 import './Exrcises.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
+
 
 const Exercises = () => {
 
@@ -21,10 +24,13 @@ const Exercises = () => {
   }
 
   return (
-    <div className='d-flex'>
-      <div className='exercises container p-5 w-75'>
-        <h1 className='mb-3'>Ultimate Gym Club</h1>
-        <h3 className='mb-5'>Select your todays exercise</h3>
+    <div className='d-flex justify-content-between'>
+      <div className='exercises container m-5 px-5 w-75'>
+        <div>
+          
+          <h1 className='mb-5 fs-2'><span><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon></span> Ultimate-Gym-Club</h1>
+        </div>
+        <h3 className='mb-2 fs-4'>Select your todays exercise</h3>
         <div className='row row-cols-3'>
         {
           exercises.map(exercise => <Exercise
