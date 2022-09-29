@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import profile from '../../profile.jpg';
+import BreakTime from '../BreakTime/BreakTime';
+import './Activity.css';
 
 const Activity = ({list}) => {
 
@@ -9,6 +11,20 @@ const Activity = ({list}) => {
   for(const exercise of list){
     totalSeconds = totalSeconds + exercise.timeRequired;
   }
+
+  
+  const breakTimes = [10, 20, 30, 40, 50];
+  const [time, setTime] = useState([0]);
+
+
+  const handleBreakTime = (breakTime = 0) => {
+      setTime(breakTime);
+    }
+
+  // let [breakTime, setBreakTime] = useState("");
+  // const handleBreakTime = (event) => {
+  //   setBreakTime(event.target.innerText);
+  // }
 
   return (
     <div className='w-25 p-3 '>
@@ -35,11 +51,17 @@ const Activity = ({list}) => {
       </div>
       <h3 className='pt-4'>Add a break</h3>
       <div className='mt-3 d-flex justify-content-around align-items-center bg-info rounded-2 p-3 mb-5'>
-        <div className='p-2 rounded-circle bg-light'>10s</div>
-        <div className='p-2 rounded-circle bg-light'>20s</div>
-        <div className='p-2 rounded-circle bg-light'>30s</div>
-        <div className='p-2 rounded-circle bg-light'>40s</div>
-        <div className='p-2 rounded-circle bg-light'>50s</div>
+        {
+          breakTimes.map(breakTime => <BreakTime 
+            breakTime={breakTime}
+            handleBreakTime={handleBreakTime}
+            ></BreakTime>)
+        }
+        {/* <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 10 </div>
+        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 20 </div>
+        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 30 </div>
+        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 40 </div>
+        <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 50 </div> */}
       </div>
       <h3 className='pt-4'>Exercise Details</h3>
       <div className='mt-4 d-flex justify-content-between align-items-center bg-info rounded-2 p-3 mb-2'>
@@ -55,7 +77,7 @@ const Activity = ({list}) => {
           Break time
         </div>
         <div>
-          000 seconds
+          {time} seconds
         </div>
       </div>
       <button className='btn btn-primary w-100 p-3'>Activity Completed</button>
