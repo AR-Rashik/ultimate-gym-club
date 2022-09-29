@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import profile from '../../profile.jpg';
+import { addToDB, getFromDb } from '../../utilities/fakedb';
 import BreakTime from '../BreakTime/BreakTime';
 import './Activity.css';
 
 const Activity = ({list}) => {
 
-  console.log(list);
+  // console.log(list);
 
   let totalSeconds = 0;
   for(const exercise of list){
@@ -16,10 +17,27 @@ const Activity = ({list}) => {
   const breakTimes = [10, 20, 30, 40, 50];
   const [time, setTime] = useState([0]);
 
-
-  const handleBreakTime = (breakTime = 0) => {
+  
+  
+  const handleBreakTime = (breakTime) => {
+      addToDB(breakTime);
       setTime(breakTime);
     }
+
+  
+    useEffect(() => {
+      setTime(getFromDb('time'))
+    }, [])
+    
+    
+    
+
+    // const getFromDB = () => {
+    //   const newTime = localStorage.getItem('time');
+    //   setbrTime(newTime);
+    // }
+    //  getFromDB();
+    
 
   // let [breakTime, setBreakTime] = useState("");
   // const handleBreakTime = (event) => {
@@ -53,8 +71,10 @@ const Activity = ({list}) => {
       <div className='mt-3 d-flex justify-content-around align-items-center bg-info rounded-2 p-3 mb-5'>
         {
           breakTimes.map(breakTime => <BreakTime 
+            
             breakTime={breakTime}
             handleBreakTime={handleBreakTime}
+            key={breakTime}
             ></BreakTime>)
         }
         {/* <div onClick={(event) => handleBreakTime(event)} className='p-2 rounded-circle bg-light pointer'> 10 </div>
