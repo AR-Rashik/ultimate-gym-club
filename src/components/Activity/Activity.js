@@ -41,18 +41,6 @@ const Activity = ({list}) => {
       });
   };
 
-    // const getFromDB = () => {
-    //   const newTime = localStorage.getItem('time');
-    //   setbrTime(newTime);
-    // }
-    //  getFromDB();
-    
-
-  // let [breakTime, setBreakTime] = useState("");
-  // const handleBreakTime = (event) => {
-  //   setBreakTime(event.target.innerText);
-  // }
-
   return (
     <div className='p-2 w-100 activity-container'>
       <div className='d-flex align-items-center '>
@@ -76,7 +64,7 @@ const Activity = ({list}) => {
           <div>Age</div>
         </div>
       </div>
-      <h4 className='pt-4'>Add a break</h4>
+      <h4 className='pt-4'>Add A Break</h4>
       <div className='mt-2 d-flex flex-wrap gx-2 justify-content-around align-items-center box-container rounded-2 p-3 mb-5'>
         {
           breakTimes.map(breakTime => <BreakTime 
