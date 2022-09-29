@@ -24,14 +24,14 @@ const Exercises = () => {
   }
 
   return (
-    <div className='d-flex justify-content-between'>
-      <div className='exercises container m-5 px-5 w-75'>
+    <div className='responsive'>
+      <div className='exercises m-md-5 mb-3 px-md-5 px-3'>
         <div>
           
-          <h1 className='mb-5 fs-2'><span><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon></span> Ultimate-Gym-Club</h1>
+          <h1 className='mb-5 fs-2 text-md-center text-lg-start text-center'><span><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon></span> Ultimate-Gym-Club</h1>
         </div>
-        <h3 className='mb-2 fs-4'>Select your todays exercise</h3>
-        <div className='row row-cols-3'>
+        <h3 className='mb-2 fs-4 text-md-center text-lg-start text-center'>Select your todays exercise</h3>
+        <div className='row row-cols-1 row-cols-lg-3 row-cols-md-2'>
         {
           exercises.map(exercise => <Exercise
             key={exercise.id}
@@ -41,7 +41,9 @@ const Exercises = () => {
         }
         </div>
       </div>
-      <Activity list={list}></Activity>
+        <div className='activity'>
+          <Activity list={list}></Activity>
+        </div>
     </div>
   );
 };

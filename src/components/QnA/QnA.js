@@ -5,7 +5,7 @@ const QnA = () => {
   return (
     <div className='container my-5'>
       <h3 className='text-center mb-4'>Question and Answer</h3>
-      <div class="accordion accordion-flush w-75 mx-auto" id="accordionFlushExample">
+      <div class="accordion accordion-flush w-100 mx-auto" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">

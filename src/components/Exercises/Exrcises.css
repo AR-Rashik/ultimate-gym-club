@@ -1,3 +1,29 @@
-/* .exercises{
-  background-color: #E3FDFD;
-} */
+.responsive{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exercises{
+  width: 75%;
+}
+
+.activity{
+  width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  .responsive{
+    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .exercises{
+    width: 100%;
+  }
+  .activity{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+}

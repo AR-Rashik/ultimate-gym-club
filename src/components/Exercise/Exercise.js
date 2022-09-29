@@ -4,7 +4,7 @@ import './Exercise.css';
 const Exercise = ({exercise,handleAddToList}) => {
 
   const {id, picture, name, about, age, timeRequired} = exercise;
-  const cardText = about.length > 110 ? about.slice(0, 110) + '...' : about;
+  const cardText = about.length > 115 ? about.slice(0, 115) + '...' : about;
 
   return (
     <div className="exercise mt-3 col">
